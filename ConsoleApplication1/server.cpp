@@ -5,6 +5,11 @@
 
 #pragma warrning(disable: 4996)
 
+enum Packet { // Определение перечисления Packet для типов пакетов
+	P_ChatMessage, // Тип пакета для сообщения чата
+	P_Test // Тип для отправки тестового сообщения
+};
+
 int main() {
 	WSAData wsaData; // Данные Windows Socket API
 	WORD DLLVersion = MAKEWORD(2, 1);
@@ -31,5 +36,19 @@ int main() {
 		std::cout << "ACCEPT ERROR" << std::endl;
 	} else {
 		std::cout << "Client connected!";
+		std::string msg = "Hello world!";
+		int msg_size = msg.size();
+		Packet msgtype = P_ChatMessage;
+		//send(newConnection, (char*)&msgtype, sizeof(Packet), NULL);
+		send(newConnection, (char*)&msg_size, sizeof(int), NULL);
+		send(newConnection, msg.c_str(), msg_size, NULL);
+		while (true){
+			int msg_size;
+			recv(newConnection, (char*)&msg_size, sizeof(int), NULL);
+			char* userMessage = new char[msg_size + 1];
+			recv(newConnection, userMessage, msg_size, NULL);
+			std::cout << userMessage << std::endl;
+		}
+		
 	}
 }
