@@ -5,10 +5,29 @@
 
 #pragma warrning(disable: 4996)
 
+SOCKET Connections[100]; // Массив для хранения соединений (сокеты)
+int counter = 0; // Счётчик активных соединений
 enum Packet { // Определение перечисления Packet для типов пакетов
 	P_ChatMessage, // Тип пакета для сообщения чата
 	P_Test // Тип для отправки тестового сообщения
 };
+
+void ClientHandler(int index) { // функция для обработки клиентского запроса
+	while (true) {
+		int msg_size;
+		recv(Connections[index], (char*)&msg_size, sizeof(int), NULL);
+		char* userMessage = new char[msg_size + 1];
+		recv(Connections[index], userMessage, msg_size, NULL);
+		std::cout << userMessage << std::endl;
+		for (int i = 0; i < counter; i++) { // Цикл по всем соединениям
+			if (i == index) { // Если это текущее подключение
+				continue; // Пропускаем
+			}
+			send(Connections[i], (char*)&msg_size, sizeof(int), NULL); // Отправка размера сообщения
+			send(Connections[i], userMessage, msg_size, NULL); // Отправка сообщения
+		}
+	}
+}
 
 int main() {
 	WSAData wsaData; // Данные Windows Socket API
@@ -31,24 +50,24 @@ int main() {
 	listen(sListen, SOMAXCONN); // Перевод сокета в режим прослушивания входящих соединений
 
 	SOCKET newConnection; // Сокет для установления соединения с новым клиентом
-	newConnection = accept(sListen, (SOCKADDR*)&addr, &sizeofaddr); // Принимаем входящее соединение
-	if (newConnection == 0) {
-		std::cout << "ACCEPT ERROR" << std::endl;
-	} else {
-		std::cout << "Client connected!";
-		std::string msg = "Hello world!";
-		int msg_size = msg.size();
-		Packet msgtype = P_ChatMessage;
-		//send(newConnection, (char*)&msgtype, sizeof(Packet), NULL);
-		send(newConnection, (char*)&msg_size, sizeof(int), NULL);
-		send(newConnection, msg.c_str(), msg_size, NULL);
-		while (true){
-			int msg_size;
-			recv(newConnection, (char*)&msg_size, sizeof(int), NULL);
-			char* userMessage = new char[msg_size + 1];
-			recv(newConnection, userMessage, msg_size, NULL);
-			std::cout << userMessage << std::endl;
+
+	for (int i=0; i<100; i++){
+		newConnection = accept(sListen, (SOCKADDR*)&addr, &sizeofaddr); // Принимаем входящее соединение
+		if (newConnection == 0) {
+			std::cout << "ACCEPT ERROR" << std::endl;
 		}
-		
+		else {
+			std::cout << "Client connected!" << std::endl;
+			std::string msg = "Hello world!\n";
+			int msg_size = msg.size();
+			Packet msgtype = P_ChatMessage;
+			//send(newConnection, (char*)&msgtype, sizeof(Packet), NULL);
+			send(newConnection, (char*)&msg_size, sizeof(int), NULL);
+			send(newConnection, msg.c_str(), msg_size, NULL);
+
+			Connections[i] = newConnection; // Сохраняем сокет подключившигося клиента в массив соединений
+			counter++;
+			CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)ClientHandler, (LPVOID)(i), NULL, NULL);
+		}
 	}
 }
