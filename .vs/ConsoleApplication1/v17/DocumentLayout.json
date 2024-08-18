@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{D54B0E8F-46B5-4AF4-A027-E07159DAD6B3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D54B0E8F-46B5-4AF4-A027-E07159DAD6B3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\test_sql.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D54B0E8F-46B5-4AF4-A027-E07159DAD6B3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\test_sql.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D54B0E8F-46B5-4AF4-A027-E07159DAD6B3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D54B0E8F-46B5-4AF4-A027-E07159DAD6B3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D54B0E8F-46B5-4AF4-A027-E07159DAD6B3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D54B0E8F-46B5-4AF4-A027-E07159DAD6B3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D54B0E8F-46B5-4AF4-A027-E07159DAD6B3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D54B0E8F-46B5-4AF4-A027-E07159DAD6B3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -22,8 +34,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cpp",
+              "DocumentMoniker": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\User.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\User.cpp",
+              "ToolTip": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\User.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\User.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-16T09:40:10.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.h",
+              "DocumentMoniker": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\User.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\User.h",
+              "ToolTip": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\User.h",
+              "RelativeToolTip": "ConsoleApplication1\\User.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-16T09:35:34.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test_sql.cpp",
+              "DocumentMoniker": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\test_sql.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\test_sql.cpp",
+              "ToolTip": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\test_sql.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\test_sql.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABsAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T10:19:39.789Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,14 +81,14 @@
               "RelativeDocumentMoniker": "ConsoleApplication1\\server.cpp",
               "ToolTip": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\server.cpp",
               "RelativeToolTip": "ConsoleApplication1\\server.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAA0wEYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-17T10:07:46.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "oop.cpp",
               "DocumentMoniker": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\oop.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\oop.cpp",
@@ -51,16 +100,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ConsoleApplication1.cpp",
               "DocumentMoniker": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1.cpp",
               "ToolTip": "C:\\Users\\MateBook\\source\\repos\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
               "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1.cpp",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-13T09:16:13.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-13T09:16:13.188Z"
             }
           ]
         }

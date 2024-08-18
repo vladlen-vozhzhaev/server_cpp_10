@@ -1,0 +1,15 @@
+﻿  server.cpp
+C:\Users\MateBook\source\repos\ConsoleApplication1\ConsoleApplication1\server.cpp(12,9): warning C4068: неизвестная прагма "warrning"
+C:\Users\MateBook\source\repos\ConsoleApplication1\ConsoleApplication1\server.cpp(28,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\MateBook\source\repos\ConsoleApplication1\ConsoleApplication1\server.cpp(182,68): warning C4312: приведение типов: преобразование из "int" в "LPVOID" большего размера
+  Создание кода
+  1 of 172 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  ConsoleApplication1.vcxproj -> C:\Users\MateBook\source\repos\ConsoleApplication1\x64\Release\ConsoleApplication1.exe
+  C:\Users\MateBook\Documents\lib\mysqlconnector\lib64\libcrypto-3-x64.dll
+  C:\Users\MateBook\Documents\lib\mysqlconnector\lib64\libssl-3-x64.dll
+  C:\Users\MateBook\Documents\lib\mysqlconnector\lib64\mysqlcppconn-9-vs14.dll
+  C:\Users\MateBook\Documents\lib\mysqlconnector\lib64\mysqlcppconn8-2-vs14.dll
+  Скопировано файлов: 4.

@@ -1,29 +1,20 @@
-﻿// ConsoleApplication1.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-// В нашей программе, уровень здоровья не может превышать 100ед.
-/*
-#include <iostream>
-
-void correct_answer() {
-	std::cout << "correct_answer";
-}
-
-void incorrect_answer() {
-	std::cout << "incorrect_answer";
-}
-
-void question(std::string question, void (*yes)(), void (*no)()) {
-	std::cout << question << "\n";
-	std::string answer;
-	std::cin >> answer;
-	if (answer == "Yes") {
-		yes();
-	}else {
-		no();
-	}
-}
-
-int main() {
-	question("2+2=4?", correct_answer, incorrect_answer);
-	question("2+5=4?", incorrect_answer, correct_answer);
-}
-*/
+﻿//#include <iostream>
+//#include <exception>
+//double divide(double a, double b) {
+//	if(b)
+//		return a / b;
+//	throw std::runtime_error("division by zero");
+//}
+//
+//int main() {
+//	double num1 = 8;
+//	double num2 = 0;
+//	try{
+//		double num3 = divide(num1, num2);
+//		std::cout << num3 << std::endl;
+//	}
+//	catch (const std::runtime_error& e){
+//		std::cout << e.what();
+//	}
+//	std::cout << "\nHello";
+//}
